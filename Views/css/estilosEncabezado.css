@@ -1,6 +1,6 @@
 /*Estilo que afecta al encabezado encabezado y la navegación*/
 header {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans';
   background-color: #000000;
   opacity: 0.9; /* Cambia la opacidad del encabezado */
   color: white;
