@@ -1,17 +1,26 @@
 /*Estilo que afecta al encabezado encabezado y la navegación*/
 header {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: #000000;
-  opacity: 80%;
+  opacity: 0.9; /* Cambia la opacidad del encabezado */
   color: white;
   padding: 10px 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: space-around;
   border-radius: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(162, 58, 10, 0.381); /* Asegúrate de que el encabezado esté por encima de otros elementos */
 }
 header img{
   max-height: 60px;
+}
+body{
+  margin-top: 80px;
 }
 /* Estilo para la lista de navegación */
 nav ul {
