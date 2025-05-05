@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="../css/estilosEncabezado.css">
     <link rel="stylesheet" type="text/css" href="../css/estiloWhatsapp.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/estiloGeneral.css">
+    <link rel="stylesheet" href="../css/contenedores.css">
     <title>Contacto - Novoa & Novoa Abogados</title>
 </head>
 <body>
@@ -32,46 +34,42 @@
 </header>
     <h1>Contacto</h1>
     
-    <div>
+    <div class="contacto-container">
         <form action="#" method="POST">
             <div>
                 <label for="nombre">Nombre completo:</label>
                 <input type="text" id="nombre" name="nombre" required>
             </div>
-            
             <div>
                 <label for="email">Correo electrónico:</label>
                 <input type="email" id="email" name="email" required>
             </div>
-            
             <div>
                 <label for="telefono">Teléfono:</label>
                 <input type="tel" id="telefono" name="telefono">
             </div>
-            
             <div>
                 <label for="asunto">Asunto:</label>
                 <input type="text" id="asunto" name="asunto" required>
             </div>
-            
             <div>
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
             </div>
-            
             <div>
                 <button type="submit">Enviar mensaje</button>
             </div>
         </form>
+    
+        <div class="contacto-info">
+            <h3>Información de contacto</h3>
+            <p><strong>Dirección:</strong> Jr. Jose Olaya 115, Bagua Grande, Perú</p>
+            <p><strong>Teléfono:</strong> +51 927 899 135</p>
+            <p><strong>Email:</strong> contacto@novoaabogados.com</p>
+            <p><strong>Horario de atención:</strong> Lunes a Viernes de 8:00 a 18:00</p>
+        </div>
     </div>
     
-    <div>
-        <h3>Información de contacto</h3>
-        <p><strong>Dirección:</strong> Av. Principal 123, Lima, Perú</p>
-        <p><strong>Teléfono:</strong> +51 927 899 135</p>
-        <p><strong>Email:</strong> contacto@novoaabogados.com</p>
-        <p><strong>Horario de atención:</strong> Lunes a Viernes de 9:00 a 18:00</p>
-    </div>
     <!-- Botón flotante de WhatsApp -->
     <div id="whatsapp-button">
         <a href="https://wa.me/927899135" target="_blank">

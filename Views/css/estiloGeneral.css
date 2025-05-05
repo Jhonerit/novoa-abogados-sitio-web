@@ -17,3 +17,13 @@ h1{
     padding: 40px 10px;
     border-radius: 5px;
 }
+h3{
+    font-family: 'Lucida Sans';
+    font-size: 20px;
+}
+
+article>p{
+    font-family: 'Lucida Sans';
+    font-size: 12px;
+    text-align: center;
+}
