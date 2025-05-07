@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 .parrafo{
-    font-family: 'Lucida Sans';
+    font-family: "Source Sans 3",'Arial';
     font-size: 16px;
     text-align: justify;
     color: #333;
@@ -10,7 +12,7 @@
     margin: 10px 30px;
 }   
 h1{
-    font-family: 'Lucida Sans';
+    font-family: "Source Sans 3",'Arial';
     font-size: 30px;
     text-align: center;
     color: #333;
@@ -18,12 +20,12 @@ h1{
     border-radius: 5px;
 }
 h3{
-    font-family: 'Lucida Sans';
+    font-family: "Source Sans 3",'Arial';
     font-size: 20px;
 }
 
 article>p{
-    font-family: 'Lucida Sans';
+    font-family: "Source Sans 3",'Arial';
     font-size: 12px;
     text-align: center;
 }

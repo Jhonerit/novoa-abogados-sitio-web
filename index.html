@@ -32,38 +32,20 @@
         </ul>
       </nav>
     </header>
-    <div class="slider">
-      <div class="slides">
-        <div class="slide">
-          <img
-            src="assets/images/imagen1.jpg"
-            width="350"
-            height="250" />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/images/imagen2.jpg"
-            width="350"
-            height="250" />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/images/imagen3.jpg"
-            width="350"
-            height="250" />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/images/imagen4.jpg"
-            width="350"
-            height="250" />
-        </div>
+    <div class="slider-container">
+      <div class="slider-track" id="slider-track">
+        <div class="slide"><img src="assets/images/imagen1.jpg" alt=""></div>
+        <div class="slide"><img src="assets/images/imagen2.jpg" alt=""></div>
+        <div class="slide"><img src="assets/images/imagen3.jpg" alt=""></div>
+        <div class="slide"><img src="assets/images/imagen4.jpg" alt=""></div>
+        <div class="slide"><img src="assets/images/imagen3.jpg" alt=""></div>
+        <div class="slide"><img src="assets/images/imagen2.jpg" alt=""></div>
+        <div class="slide"><img src="assets/images/imagen1.jpg" alt=""></div>
+        <div class="slide"><img src="assets/images/imagen4.jpg" alt=""></div>
       </div>
       <div class="slider-dots">
-        <span class="dot" data-index="0"></span>
-        <span class="dot" data-index="1"></span>
-        <span class="dot" data-index="2"></span>
-        <span class="dot" data-index="3"></span>
+        <span class="dot" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
       </div>
     </div>
 
@@ -101,5 +83,23 @@
         </p>
       </div>
     </footer>
+    <script>
+      const track = document.getElementById('slider-track');
+      const dots = document.querySelectorAll('.dot');
+
+      function goToSlide(index) {
+        const slideWidth = document.querySelector('.slider-container').offsetWidth;
+        track.style.transform = `translateX(-${index * slideWidth}px)`;
+
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[index].classList.add('active');
+      }
+
+      // Make it responsive on resize
+      window.addEventListener('resize', () => {
+        const activeIndex = [...dots].findIndex(dot => dot.classList.contains('active'));
+        goToSlide(activeIndex);
+      });
+    </script>
   </body>
 </html>

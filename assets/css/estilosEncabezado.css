@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 header {
-  font-family: 'Lucida Sans';
+  font-family: "Source Sans 3",'Arial';
   background-color: #000000;
   opacity: 0.9;
   color: white;
