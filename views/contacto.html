@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/estiloGeneral.css">
     <link rel="stylesheet" href="../assets/css/contenedores.css">
+    <link rel="stylesheet" href="../assets/icons/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
     <title>Contacto - Novoa & Novoa Abogados</title>
 </head>
 <body>
@@ -31,42 +33,79 @@
                 <li><a href="contacto.html">Contacto</a></li>                    
             </ul>
         </nav>
-</header>
-    <h1>Contacto</h1>
+    </header>
+    <h1 style="padding-top: 80px">Contacto</h1>
     
     <div class="contacto-container">
         <form action="#" method="POST">
-            <div>
-                <label for="nombre">Nombre completo:</label>
-                <input type="text" id="nombre" name="nombre" required>
+            <div class="row gap-1">
+                <div class="col">
+                    <label for="name" class="pb-1">
+                        <i class="fa-solid fa-user"></i>
+                        Nombres:
+                    </label>
+                    <input class="form-control form-control-sm" type="text" id="name" name="nombre" required placeholder="Nombres">
+                </div>
+                <div class="col">
+                    <label for="lastname" class="pb-1">
+<!--                        <i class="fa-solid fa-user"></i>-->
+                        Apellidos:
+                    </label>
+                    <input class="form-control form-control-sm" type="text" id="lastname" name="nombre" required placeholder="Apellidos">
+                </div>
             </div>
-            <div>
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
+            <div class="pt-2">
+                <label for="email" class="pb-1">
+                    <i class="fa-solid fa-envelope"></i>
+                    E-mail:</label>
+                <input class="form-control form-control-sm" type="email" id="email" name="email" required placeholder="Email">
             </div>
-            <div>
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono">
+            <div class="pt-2">
+                <label for="telefono" class="pb-1">
+                    <i class="fa-solid fa-phone"></i>
+                    Teléfono:</label>
+                <input class="form-control form-control-sm" type="tel" id="telefono" name="telefono" placeholder="Teléfono">
             </div>
-            <div>
-                <label for="asunto">Asunto:</label>
-                <input type="text" id="asunto" name="asunto" required>
+            <div class="pt-2">
+                <label for="asunto" class="pb-1">
+                    <i class="fa-solid fa-inbox"></i>
+                    Asunto:</label>
+                <input class="form-control form-control-sm" type="text" id="asunto" name="asunto" required placeholder="Asunto">
             </div>
-            <div>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            <div class="pt-2">
+                <label for="mensaje" class="pb-1">
+                    <i class="fa-solid fa-message"></i>
+                    Mensaje:</label>
+                <textarea class="form-control form-control-sm" id="mensaje" name="mensaje" rows="5" required placeholder="Mensaje"></textarea>
             </div>
-            <div>
-                <button type="submit">Enviar mensaje</button>
+            <div class="pt-2">
+                <button class="w-100 rounded-2" type="submit">Enviar mensaje</button>
             </div>
         </form>
     
         <div class="contacto-info">
             <h3>Información de contacto</h3>
-            <p><strong>Dirección:</strong> Jr. Jose Olaya 115, Bagua Grande, Perú</p>
-            <p><strong>Teléfono:</strong> +51 927 899 135</p>
-            <p><strong>Email:</strong> contacto@novoaabogados.com</p>
-            <p><strong>Horario de atención:</strong> Lunes a Viernes de 8:00 a 18:00</p>
+            <p><span>
+                <i class="fa-solid fa-location-dot"></i>
+                Dirección:</span> Jr. Jose Olaya 115, Bagua Grande, Perú</p>
+            <p><span>
+                <i class="fa-solid fa-phone"></i>
+                Teléfono:</span> +51 927 899 135</p>
+            <p><span>
+                <i class="fa-solid fa-envelope"></i>
+                Email:</span> contacto@novoaabogados.com</p>
+            <p><span>
+                <i class="fa-solid fa-calendar-days"></i>
+                Horario de atención:</span> Lunes a Viernes de 8:00 a 18:00</p>
+            <p>
+                <span>Redes sociales:
+                    <i class="fa-brands fa-facebook" style="color: #047cd7;"></i>
+                    |
+                    <i class="fa-brands fa-instagram"></i>
+                    |
+                    <i class="fa-brands fa-twitter"></i>
+                </span>
+            </p>
         </div>
     </div>
     

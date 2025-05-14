@@ -51,37 +51,12 @@ body {
     max-width: 1000px;
     margin: 10px auto;
     padding: 40px;
-    background-color: rgb(195, 204, 204);
+    /*background-color: rgb(195, 204, 204);*/
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   }
-  
+
   /* estilo del formulario */
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  form div {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  input,
-  textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-    background-color: #f9f9f9;
-  }
-  
   button {
     padding: 12px;
     background-color: #2d4a53;
@@ -92,29 +67,7 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  
+
   button:hover {
     background-color: #1e3238;
   }
-  
-  /* Información de contacto */
-  .contacto-info h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
-    color: #2d4a53;
-  }
-  
-  .contacto-info p {
-    margin-bottom: 10px;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  /* Responsive 
-  @media (max-width: 768px) {
-    .contacto-container {
-      grid-template-columns: 1fr;
-      padding: 20px;
-    }
-  }
-  */
